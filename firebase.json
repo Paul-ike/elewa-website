@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "site": "elewa-education",
+    "public": "dist/apps/elewa-website/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "frameworksBackend": {
+      "region": "europe-west1"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.education-background {
+  width: auto;
+  height: 400px;
+  background: #fae9e8 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .overlay {
+    transition: 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+
+.container {
+  .sphere {
+    position: absolute;
+    border-radius: 600px;
+    background: transparent
+      linear-gradient(
+        180deg,
+        var(--elewa-website-conversational-learning-bg-color-1) 0%,
+        var(--elewa-website-conversational-learning-bg-color-2) 100%
+      )
+      0% 0% no-repeat padding-box;
+
+    &--one {
+      top: 70%;
+      right: 5%;
+      transform: translate(-50%, -50%) matrix(0, -1, 1, 0, 0, 0);
+      width: 170px;
+      height: 260px;
+
+      @media (max-width: 768px) {
+        top: 70%;
+        right: 0%;
+      }
+
+      @media (min-width: 768px) and (max-width: 880px) {
+        top: 80%;
+        height: 200px;
+        width: 150px;
+      }
+    }
+
+    &--two {
+      bottom: -20%;
+      right: 25%;
+      transform: translate(-50%, -50%) matrix(0, 1, -1, 0, 0, 0);
+      margin-top: 100px;
+      width: 170px;
+      height: 260px;
+
+      @media (max-width: 768px) {
+        bottom: -20%;
+        right: 15%;
+      }
+
+      @media (min-width: 769px) and (max-width: 880px) {
+        bottom: -5%;
+        right: 25%;
+        height: 200px;
+        width: 150px;
+      }
+    }
+  }
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  max-width: 320px;
+  top: 40%;
+  left: 5%;
+}

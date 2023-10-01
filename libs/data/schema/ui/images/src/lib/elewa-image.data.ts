@@ -5,8 +5,6 @@ import {
 
 export const __elewaImageData: ImageConfig = {
   title: 'Image 1',
-  imageSrc:
-    'https://images.pexels.com/photos/1876790/pexels-photo-1876790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  imageSrc: 'assets/images/farm.png',
   visualisation: ImageVisualisation.Stacked,
-  // maxWidth: '300px',
 };

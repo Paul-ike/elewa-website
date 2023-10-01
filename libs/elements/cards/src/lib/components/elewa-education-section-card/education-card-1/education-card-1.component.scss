@@ -1,0 +1,69 @@
+.education-background {
+  width: auto;
+  height: 400px;
+  background: #f4edfd 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  
+  &:hover .overlay {
+    transition: 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+
+.sphere {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.sphere--one {
+  background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
+    0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  left: 9%;
+  bottom: 10%;
+
+  @media (max-width: 768px) {
+    left: 9%;
+    bottom: 10%;
+  }
+}
+
+.sphere--two {
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: transparent linear-gradient(90deg, #dbc2f500 0%, #dbc2f5e6 100%)
+    0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  left: 40%;
+  bottom: 10%;
+
+  @media (max-width: 768px) {
+    left: 40%;
+    bottom: 10%;
+  }
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  max-width: 320px;
+  top: 40%;
+  left: 5%;
+}

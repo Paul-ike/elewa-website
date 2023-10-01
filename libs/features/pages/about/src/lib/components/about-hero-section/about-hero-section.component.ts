@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { __elewaImageData } from '@elewa-website/data/schema/ui/images';
-import { __highlightedAboutItems } from '@elewa-website/data/sections';
 
+import { __aboutImageAndTextData } from '@elewa-website/data/sections';
 
 @Component({
   selector: 'elewa-website-about-hero-section',
@@ -9,7 +8,6 @@ import { __highlightedAboutItems } from '@elewa-website/data/sections';
   styleUrls: ['./about-hero-section.component.scss'],
 })
 export class AboutHeroSectionComponent {
-  highlightedAboutItems = __highlightedAboutItems
-  image= __elewaImageData
-
+  heroText = __aboutImageAndTextData.heroText;
+  image = __aboutImageAndTextData.image;
 }

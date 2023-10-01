@@ -1,0 +1,112 @@
+.education-background {
+  width: auto;
+  height: 400px;
+  /* UI Properties */
+  background: #fcf6e4 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .overlay {
+    transition: 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+
+.sphere-1 {
+  position: absolute;
+  bottom: 5%;
+  right: 39%;
+  width: 120px;
+  height: 120px;
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+  border-radius: 50%;
+
+  @media (max-width: 1300px) {
+    right: 59%;
+  }
+
+  @media (max-width: 900px) {
+    right: 64%;
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (max-width: 768px) {
+    right: 39%;
+  }
+}
+
+.sphere-2 {
+  position: absolute;
+  bottom: 5%;
+  right: 22%;
+  width: 120px;
+  height: 200px;
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+
+  @media (max-width: 1300px) {
+    right: 32%;
+  }
+
+  @media (max-width: 900px) {
+    width: 100px;
+    height: 170px;
+    right: 35%;
+  }
+
+  @media (max-width: 768px) {
+    right: 22%;
+  }
+}
+
+.sphere-3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 120px;
+  height: 261px;
+  background: transparent linear-gradient(180deg, #f2cf73 0%, #f2cf7300 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 110px;
+  opacity: 1;
+
+  @media (max-width: 1300px) {
+    bottom: 5%;
+    right: 5%;
+  }
+
+  @media (max-width: 900px) {
+    width: 100px;
+    height: 230px;
+  }
+
+  @media (max-width: 768px) {
+    right: 5%;
+  }
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  max-width: 320px;
+  top: 40%;
+  left: 5%;
+}

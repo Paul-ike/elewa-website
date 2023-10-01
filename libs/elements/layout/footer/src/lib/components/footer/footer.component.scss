@@ -17,7 +17,8 @@
     width: 75vw;
     margin: auto;
     padding: 1rem 0.5rem 0 0.5rem;
-    border-top: 2px solid var(--elewa-website-color-footer-nav-child-items-white);
+    border-top: 2px solid
+      var(--elewa-website-color-footer-nav-child-items-white);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -61,6 +62,8 @@
       font-family: var(--elewa-website-dmsans-regular);
       font-size: var(--elewa-website-font-size-description-medium);
       font-weight: 300;
+      cursor: pointer;
+      z-index: 1000;
     }
 
     p {
@@ -95,6 +98,10 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        img {
+          cursor: pointer;
+        }
 
         @media (max-width: 493px) {
           gap: 1rem;

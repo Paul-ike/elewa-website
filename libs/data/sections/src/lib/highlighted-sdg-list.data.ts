@@ -1,34 +1,43 @@
 import { SDGCard } from '@elewa-website/models/schema/ui/cards';
+import { SliderButtonData } from '@elewa-website/models/schema/ui/buttons';
 
-export const __highlightedSDGList: SDGCard[] = [
+const __highlightedSDGList: SDGCard[] = [
   {
     title: 'Quality Education',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-book-open',
+      'Our training ensures inclusive, quality education, expands access, and enhances learning outcomes.',
+    icon: 'assets/svgs/Quality education.svg',
   },
   {
     title: 'Reduced Inequalities',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrows-up-down-left-right',
+      'We endeavour to reduce education inequalities, targeting access, outcomes, and resources for disadvantaged groups.',
+    icon: 'assets/svgs/Reduced inequalities.svg',
   },
   {
     title: 'Gender Equality',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrows-to-circle',
+      'We strive to empower women and girls, becasue we understand it is vital for equitable, safe education.',
+    icon: 'assets/svgs/Gender equality.svg',
   },
   {
     title: 'Economic Growth',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-arrow-up-right-dots',
+      'We seek to foster economic growth by upskilling the entering and current workforce to increase productivity.',
+    icon: 'assets/svgs/Economic growth.svg',
   },
   {
-    title: 'Partnership for the goals',
+    title: 'Partnership For The Goals',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor',
-    icon: 'fa-solid fa-check-double',
+      'We seek to forge global partnerships which are crucial for successful education, uniting governments, organizations, and sectors.',
+    icon: 'assets/svgs/Partnership for the goals.svg',
   },
 ];
+
+const __sdgSliderButton: SliderButtonData = {
+  text: 'Learn More About SDG',
+  bgColor: 'var(--elewa-website-color-primary-purple)',
+  hoverBorderColor: 'var(--elewa-website-card-color)',
+};
+
+export { __highlightedSDGList, __sdgSliderButton };
